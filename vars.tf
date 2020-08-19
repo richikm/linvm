@@ -8,6 +8,6 @@ variable "address_space" {
     default = ["10.0.0.0/16"]
 }
 variable "address_prefix" {
-    type = string
-    default = "10.0.0.0/24"
+    type = list
+    default = ["10.0.0.0/24"]
 }
