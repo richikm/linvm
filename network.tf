@@ -7,7 +7,7 @@ resource "azurerm_virtual_network" "tfvnet"{
 
 resource "azurerm_subnet" "tfsubnet"{
     name = "tfsubnet"
-    address_prefix = var.address_prefix
+    address_prefixes = var.address_prefix
     virtual_network_name = azurerm_virtual_network.tfvnet.name
     resource_group_name = azurerm_resource_group.RGTerra.name
 }
